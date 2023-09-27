@@ -25,5 +25,7 @@ urlpatterns = [
     url(r'^(?P<rfcno>std[0-9][0-9][0-9][0-9])$', views.showrfc, name='showrfc'),
     url(r'^ID(?P<idno>[0-9][0-9][0-9][0-9])$', views.showrfc, name='showrfc'),
     url(r'^id(?P<idno>[0-9][0-9][0-9][0-9])$', views.showrfc, name='showrfc'),
+    url(r'^ID(?P<idno>[0-9][0-9][0-9][0-9][0-9])$', views.showrfc, name='showrfc'),
+    url(r'^id(?P<idno>[0-9][0-9][0-9][0-9][0-9])$', views.showrfc, name='showrfc'),
     url(r'^dl(?P<chart>\w+)/(?P<hash>\w{6})(?P<args>\w+)$', views.dodeeplink, name='deeplink')
 ]
